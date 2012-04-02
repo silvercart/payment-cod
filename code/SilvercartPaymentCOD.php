@@ -129,4 +129,3 @@ class SilvercartPaymentCOD extends SilvercartPaymentMethod {
  
     // ...
 }
-
