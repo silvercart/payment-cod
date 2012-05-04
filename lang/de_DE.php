@@ -35,3 +35,6 @@ if (array_key_exists('de_DE', $lang) && is_array($lang['de_DE'])) {
 $lang['de_DE']['SilvercartPaymentCOD']['NAME']  = 'Nachnahme';
 $lang['de_DE']['SilvercartPaymentCOD']['TITLE'] = 'Nachnahme';
 
+$lang['de_DE']['SilvercartPaymentCODLanguage']['PLURALNAME']                    = _t('Silvercart.TRANSLATIONS');
+$lang['de_DE']['SilvercartPaymentCODLanguage']['SINGULARNAME']                  = _t('Silvercart.TRANSLATION');
+

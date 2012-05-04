@@ -35,3 +35,6 @@ global $lang;
 $lang['en_US']['SilvercartPaymentCOD']['NAME']  = 'Cash on delivery';
 $lang['en_US']['SilvercartPaymentCOD']['TITLE'] = 'Cash on delivery';
 
+$lang['en_US']['SilvercartPaymentCODLanguage']['PLURALNAME']                    = _t('Silvercart.TRANSLATIONS');
+$lang['en_US']['SilvercartPaymentCODLanguage']['SINGULARNAME']                  = _t('Silvercart.TRANSLATION');
+

@@ -20,3 +20,8 @@
  * @package Silvercart
  * @subpackage Payment
  */
+
+// DataObject Translations
+Object::add_extension('SilvercartPaymentCODLanguage',   'SilvercartLanguageDecorator');
+// Translatable DataObjects
+Object::add_extension('SilvercartPaymentCOD',           'SilvercartDataObjectMultilingualDecorator');

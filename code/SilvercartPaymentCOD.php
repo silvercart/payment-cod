@@ -32,6 +32,10 @@
  * @license http://www.gnu.org/licenses/lgpl.html GNU Lesser General Public License
  */
 class SilvercartPaymentCOD extends SilvercartPaymentMethod {
+    
+    public static $has_many = array(
+        'SilvercartPaymentCODLanguages'   => 'SilvercartPaymentCODLanguage',
+    );
  
     /**
      * contains module name for display in the admin backend
@@ -62,6 +66,28 @@ class SilvercartPaymentCOD extends SilvercartPaymentMethod {
      * @since 29.03.2012
      */
     public static $possible_payment_channels = array();
+
+    /**
+     * Field labels for display in tables.
+     *
+     * @param boolean $includerelations A boolean value to indicate if the labels returned include relation fields
+     *
+     * @return array
+     * 
+     * @author Sebastian Diel <sdiel@pixeltricks.de>
+     * @since 04.05.2012
+     */
+    public function fieldLabels($includerelations = true) {
+        $fieldLabels = array_merge(
+            parent::fieldLabels($includerelations),
+            array(
+                'SilvercartPaymentCODLanguages' => _t('SilvercartPaymentCODLanguage.PLURALNAME'),
+            )
+        );
+
+        $this->extend('updateFieldLabels', $fieldLabels);
+        return $fieldLabels;
+    }
  
     /**
      * returns CMS fields
@@ -70,13 +96,12 @@ class SilvercartPaymentCOD extends SilvercartPaymentMethod {
      *
      * @return FieldSet
      *
-     * @author Sascha Koehler <skoehler@pixeltricks.de>
-     * @since 29.03.2012
+     * @author Sascha Koehler <skoehler@pixeltricks.de>, Sebastian Diel <sdiel@pixeltricks.de>
+     * @since 04.05.2012
      */
     public function getCMSFields($params = null) {
         $fields         = parent::getCMSFieldsForModules($params);
-        $fieldLabels    = self::$field_labels;
- 
+        $fields->addFieldToTab('Sections.Translations', new ComplexTableField($this, 'SilvercartPaymentCODLanguages', 'SilvercartPaymentCODLanguage'));
         return $fields;
     }
  
