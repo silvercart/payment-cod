@@ -17,26 +17,25 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with SilvercartPrepaymentPayment.  If not, see <http://www.gnu.org/licenses/>.
  *
- * German (Germany) language pack
+ * Russian language pack
  *
- * @package Silvercart
+ * @package SilvercartPaymentCod
  * @subpackage i18n
  * @ignore
  */
 
 global $lang;
 
-i18n::include_locale_file('silvercart', 'en_US');
+i18n::include_locale_file('silvercart_payment_cod', 'en_US');
 
-if (array_key_exists('de_DE', $lang) && is_array($lang['de_DE'])) {
-    $lang['de_DE'] = array_merge($lang['en_US'], $lang['de_DE']);
+if (array_key_exists('ru_RU', $lang) && is_array($lang['ru_RU'])) {
+    $lang['ru_RU'] = array_merge($lang['en_US'], $lang['ru_RU']);
 } else {
-    $lang['de_DE'] = $lang['en_US'];
+    $lang['ru_RU'] = $lang['en_US'];
 }
 
-$lang['de_DE']['SilvercartPaymentCOD']['NAME']  = 'Nachnahme';
-$lang['de_DE']['SilvercartPaymentCOD']['TITLE'] = 'Nachnahme';
+$lang['ru_RU']['SilvercartPaymentCOD']['NAME'] = 'Фамилия';
+$lang['ru_RU']['SilvercartPaymentCOD']['TITLE'] = 'Фамилия';
 
-$lang['de_DE']['SilvercartPaymentCODLanguage']['PLURALNAME']                    = _t('Silvercart.TRANSLATIONS');
-$lang['de_DE']['SilvercartPaymentCODLanguage']['SINGULARNAME']                  = _t('Silvercart.TRANSLATION');
-
+$lang['ru_RU']['SilvercartPaymentCODLanguage']['PLURALNAME'] = _t('Silvercart.TRANSLATIONS');
+$lang['ru_RU']['SilvercartPaymentCODLanguage']['SINGULARNAME'] = _t('Silvercart.TRANSLATIONS');
