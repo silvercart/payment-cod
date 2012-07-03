@@ -58,7 +58,7 @@ class SilvercartPaymentCOD extends SilvercartPaymentMethod {
     public static $has_multiple_payment_channels = false;
  
     /**
-     * A list of possible payment channels.
+     * A list of possible payment  channels.
      *
      * @var array
      *
