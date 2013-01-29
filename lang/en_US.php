@@ -34,7 +34,7 @@ global $lang;
 
 
 
-$lang['en_US']['SilvercartPaymentPaypal']['INFOTEXT_CHECKOUT'] = 'By the day of delivery you must pay, to the Parcel service, the total amount invoiced cash.';
+$lang['en_US']['SilvercartPaymentCOD']['INFOTEXT_CHECKOUT'] = 'By the day of delivery you must pay, to the Parcel service, the total amount invoiced cash.';
 $lang['en_US']['SilvercartPaymentCOD']['NAME']  = 'Cash on delivery';
 $lang['en_US']['SilvercartPaymentCOD']['TITLE'] = 'Cash on delivery';
 
