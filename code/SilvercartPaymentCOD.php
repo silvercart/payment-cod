@@ -18,14 +18,14 @@
  * along with SilverCart.  If not, see <http://www.gnu.org/licenses/>.
  *
  * @package Silvercart
- * @subpackage Payment
+ * @subpackage Payment_CashOnDelivery
  */
 
 /**
  * Class description.
  *
  * @package Silvercart
- * @subpackage Payment
+ * @subpackage Payment_CashOnDelivery
  * @copyright 2012 pixeltricks GmbH
  * @author Sascha Koehler <skoehler@pixeltricks.de>
  * @since 29.03.2012
@@ -33,6 +33,11 @@
  */
 class SilvercartPaymentCOD extends SilvercartPaymentMethod {
     
+    /**
+     * Has many relations
+     *
+     * @var array
+     */
     public static $has_many = array(
         'SilvercartPaymentCODLanguages'   => 'SilvercartPaymentCODLanguage',
     );
@@ -41,9 +46,6 @@ class SilvercartPaymentCOD extends SilvercartPaymentMethod {
      * contains module name for display in the admin backend
      *
      * @var string
-     *
-     * @author Sascha Koehler <skoehler@pixeltricks.de>
-     * @since 29.03.2012
      */
     protected $moduleName = 'COD';
  
@@ -51,9 +53,6 @@ class SilvercartPaymentCOD extends SilvercartPaymentMethod {
      * Indicates whether a payment module has multiple payment channels or not.
      *
      * @var bool
-     *
-     * @author Sascha Koehler <skoehler@pixeltricks.de>
-     * @since 29.03.2012
      */
     public static $has_multiple_payment_channels = false;
  
@@ -61,9 +60,6 @@ class SilvercartPaymentCOD extends SilvercartPaymentMethod {
      * A list of possible payment  channels.
      *
      * @var array
-     *
-     * @author Sascha Koehler <skoehler@pixeltricks.de>
-     * @since 29.03.2012
      */
     public static $possible_payment_channels = array();
 

@@ -19,7 +19,7 @@
  *
  * Russian language pack
  *
- * @package SilvercartPaymentCod
+ * @package Silvercart
  * @subpackage i18n
  * @ignore
  */

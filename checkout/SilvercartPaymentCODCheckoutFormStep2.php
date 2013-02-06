@@ -18,14 +18,14 @@
  * along with SilverCart.  If not, see <http://www.gnu.org/licenses/>.
  *
  * @package Silvercart
- * @subpackage Forms Checkout
+ * @subpackage Forms_Checkout
  */
 
 /**
  * form step for customers shipping/billing address
  *
  * @package Silvercart
- * @subpackage Forms Checkout
+ * @subpackage Forms_Checkout
  * @author Sascha Koehler <skoehler@pixeltricks.de>
  * @copyright Pixeltricks GmbH
  * @since 29.03.2012
