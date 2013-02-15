@@ -1,0 +1,8 @@
+en:
+  SilvercartPaymentCOD:
+    INFOTEXT_CHECKOUT: "By the day of delivery you must pay, to the Parcel service, the total amount invoiced cash."
+    NAME: "Cash on delivery"
+    TITLE: "Cash on delivery"
+  SilvercartPaymentCODLanguage:
+    PLURALNAME: "Übersetzungen"
+    SINGULARNAME: "Übersetzung"

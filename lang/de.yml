@@ -1,0 +1,8 @@
+de:
+  SilvercartPaymentCOD:
+    INFOTEXT_CHECKOUT: "Bei Anlieferung der Ware müssen sie an den Paketdienst den Rechnungsbetrag bar bezahlen."
+    NAME: "Nachnahme"
+    TITLE: "Nachnahme"
+  SilvercartPaymentCODLanguage:
+    PLURALNAME: "Übersetzungen"
+    SINGULARNAME: "Übersetzung"

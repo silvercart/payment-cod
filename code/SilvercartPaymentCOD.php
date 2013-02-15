@@ -97,7 +97,6 @@ class SilvercartPaymentCOD extends SilvercartPaymentMethod {
      */
     public function getCMSFields($params = null) {
         $fields         = parent::getCMSFieldsForModules($params);
-        $fields->addFieldToTab('Sections.Translations', new ComplexTableField($this, 'SilvercartPaymentCODLanguages', 'SilvercartPaymentCODLanguage'));
         return $fields;
     }
  
