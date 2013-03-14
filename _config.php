@@ -25,3 +25,27 @@
 Object::add_extension('SilvercartPaymentCODLanguage',   'SilvercartLanguageDecorator');
 // Translatable DataObjects
 Object::add_extension('SilvercartPaymentCOD',           'SilvercartDataObjectMultilingualDecorator');
+
+// ----------------------------------------------------------------------------
+// Blacklists for SilvercartRestfulServer
+// ----------------------------------------------------------------------------
+SilvercartRestfulServer::addApiAccessBlackListFields(
+    'SilvercartPaymentCOD',
+    array(
+         'isActive',
+         'minAmountForActivation',
+         'maxAmountForActivation',
+         'mode',
+         'orderStatus',
+         'showPaymentLogos',
+         'orderRestrictionMinQuantity',
+         'enableActivationByOrderRestrictions',
+         'ShowFormFieldsOnPaymentSelection',
+         'sumModificationImpact',
+         'sumModificationImpactType',
+         'sumModificationValue',
+         'sumModificationValueType',
+         'sumModificationLabel',
+         'useSumModification',
+    )
+);
