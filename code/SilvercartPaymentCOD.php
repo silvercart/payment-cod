@@ -90,13 +90,10 @@ class SilvercartPaymentCOD extends SilvercartPaymentMethod {
      *
      * @param mixed $params optional
      *
-     * @return FieldSet
-     *
-     * @author Sascha Koehler <skoehler@pixeltricks.de>, Sebastian Diel <sdiel@pixeltricks.de>
-     * @since 04.05.2012
+     * @return FieldList
      */
     public function getCMSFields($params = null) {
-        $fields         = parent::getCMSFieldsForModules($params);
+        $fields = parent::getCMSFieldsForModules($params);
         return $fields;
     }
  
