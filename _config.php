@@ -20,6 +20,9 @@
  * @package Silvercart
  * @subpackage Payment_CashOnDelivery
  */
+if (!class_exists('SS_Object')) {
+    class_alias('Object', 'SS_Object');
+}
 
 // DataObject Translations
 SS_Object::add_extension('SilvercartPaymentCODLanguage',   'SilvercartLanguageDecorator');
